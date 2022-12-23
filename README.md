@@ -1,7 +1,16 @@
 # Java_Basics
 
+## Codewars.Com
 
-## Tasks.Task_14
+#### • [CreatePhoneNumber](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/CreatePhoneNumber.java)
+
+[[_Task link_](https://www.codewars.com/kata/525f50e3b73515a6db000b83)] Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
+
+## 
+
+## Tasks
+
+### [Tasks.Task_14](https://github.com/kreved77/Java_Basics/blob/main/src/Tasks/Task_14.java)
 for, while
 
 • "Задача 1. Даны целые числа K и N (N > 0). 
@@ -31,7 +40,7 @@ for, while
 
 
 
-## Tasks.Task_11_sorting
+### [Tasks.Task_11_sorting](https://github.com/kreved77/Java_Basics/blob/main/src/Tasks/Task_11_sorting.java)
 
 • "Задача 3. ВАРИАНТ с сортировкой по возрастанию. Даны три переменные вещественного типа: A, B, C.
 
@@ -40,7 +49,7 @@ for, while
     Вывести новые значения переменных A, B, C"
 
 
-## Tasks.Task_11
+### [Tasks.Task_11](https://github.com/kreved77/Java_Basics/blob/main/src/Tasks/Task_11.java)
 
 • "Задача 1. Дано целое число.
 
@@ -79,6 +88,6 @@ for, while
     Вывести строку — название дня недели, соответствующее данному числу (1 — «понедельник», 2 — «вторник» и т. д.)"
 
 
-## Geometry.RectangleAreaPerimeter
+### [Geometry.RectangleAreaPerimeter](https://github.com/kreved77/Java_Basics/blob/main/src/Geometry/RectangleAreaPerimeter.java)
 
     • "Программа вычисления Площади и Периметра прямоугольника со сторонами A и B."
