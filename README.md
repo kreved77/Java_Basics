@@ -6,6 +6,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/525f50e3b73515a6db000b83)] Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
 
+#### • [ListFiltering](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/ListFiltering.java)
+
+[[_Task link_](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd)] Write a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+
 ## 
 
 ## Tasks

@@ -16,7 +16,7 @@ public class CreatePhoneNumber {
         System.out.println(createPhoneNumber2(test));
         System.out.println(createPhoneNumber3(test));
         System.out.println(createPhoneNumber4(test));
-        System.out.println(createPhoneNumber5(test));
+//        System.out.println(createPhoneNumber5(test));
     }
 
 
@@ -52,7 +52,7 @@ public class CreatePhoneNumber {
         return phoneNumber;
     }
 
-    public static String createPhoneNumber5(int[] numbers) {
+/*    public static String createPhoneNumber5(int[] numbers) {
         // Your code here!
 
 //         List<String> nn = Collections.singletonList(Arrays.stream(numbers)
@@ -68,5 +68,5 @@ public class CreatePhoneNumber {
                  .replace("6", "6-");
         return str;
 
-    }
+    }*/
 }
