@@ -14,6 +14,11 @@
 
 ## Tasks
 
+
+#### [Tasks.Task_16](https://github.com/kreved77/Java_Basics/blob/main/src/Tasks/Task_16.java)
+
+• "Find maximum, minimum and average values in an Integer array"
+
 ### [Tasks.Task_14](https://github.com/kreved77/Java_Basics/blob/main/src/Tasks/Task_14.java)
 for, while
 
