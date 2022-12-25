@@ -9,10 +9,11 @@ import java.util.Scanner;
 public class Task_16t_int_array_sort {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Choose array for sorting: 1 - test data, 2 - custom array (manual input), 0 - exit");
+        System.out.println("Choose array for sorting: 1 - test data, 2 - custom array (manual input), \n 3 - 2D array[][] test data, 0 - exit");
         switch (input.nextInt()){
             case 1 -> arrTestData();
             case 2 -> arrManualInput();
+            case 3 -> arr2DTestData();
             default -> System.out.println("Undefined operation.");
             case 0 -> System.exit(0);
         }
@@ -122,6 +123,46 @@ public class Task_16t_int_array_sort {
         {
             System.out.println(value);
         }
+    }
+
+
+
+    // test data
+    private static void arr2DTestData() {
+        int[][] array = {
+                {22, 12},
+                {9, 25},
+                {12, 8},
+                {37, 3},
+                {5, 17},
+                {16, 20},
+                {4, 11},
+                {1, 7},
+                {26, 1}
+        };
+//        for (int i = 0; i < array.length; i++) {
+//
+//            System.out.println(array[i][0] + " " + array[i][1]);
+//        }
+
+        System.out.println("Initial array[][]: ");
+        System.out.println(Arrays.deepToString(array));
+
+        System.out.println("Sorted array[][0] ASC: ");
+        Arrays.sort(array, (a, b) -> Integer.compare(a[0], b[0])); // for ascending order
+        System.out.println(Arrays.deepToString(array));
+
+        System.out.println("Sorted array[][0] DESC: ");
+        Arrays.sort(array, (b, a) -> Integer.compare(a[0], b[0])); // for descending order
+        System.out.println(Arrays.deepToString(array));
+
+        System.out.println("Sorted array[][1] ASC: ");
+        Arrays.sort(array, (a, b) -> Integer.compare(a[1], b[1])); // for ascending order
+        System.out.println(Arrays.deepToString(array));
+
+        System.out.println("Sorted array[][1] DESC: ");
+        Arrays.sort(array, (b, a) -> Integer.compare(a[1], b[1])); // for descending order
+        System.out.println(Arrays.deepToString(array));
     }
 
 }
