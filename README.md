@@ -17,7 +17,7 @@
 
 #### [Task_16t_int_array_sort](https://github.com/kreved77/Java_Basics/blob/main/src/Tasks/Task_16t_int_array_sort.java)
 
-• "Sort an Integer array: (1)bubble sort, (2)using Arrays"
+• "Sort ASC/DESC an Integer array: (1)bubble sort, (2)using Arrays"
 
 #### [Task_16t_factorial_sum](https://github.com/kreved77/Java_Basics/blob/main/src/Tasks/Task_16t_factorial_sum.java)
 

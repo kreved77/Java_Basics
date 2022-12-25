@@ -3,6 +3,7 @@ package Tasks;
 // Int array sorting
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Task_16t_int_array_sort {
@@ -24,7 +25,7 @@ public class Task_16t_int_array_sort {
         int n = array.length;
 
         showArray(array);
-        sortArray(array, n);
+        array = sortArray(array, n);
         showArrayResult(array);
     }
 
@@ -41,7 +42,7 @@ public class Task_16t_int_array_sort {
         }
 
         showArray(array);
-        sortArray(array, n);
+        array = sortArray(array, n);
         showArrayResult(array);
     }
 
@@ -55,9 +56,9 @@ public class Task_16t_int_array_sort {
 
     private static int[] sortArray(int[] array, int n) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Choose sorting method: 1 - bubble sort, 2 - using Arrays, 0 - exit");
+        System.out.println("Choose sorting method: \n ASC: 1 - Bubble sort, 2 - using Arrays, \n DESC: 3 - Bubble sort, 4 - using Arrays, \n 0 - exit");
         switch (input.nextInt()){
-            // bubble sort
+            // bubble sort ASC
             case 1:
                 System.out.println("Сортировка по возрастанию методом bubble sort.");
                 for(int i=0; i < n; i ++)
@@ -73,9 +74,37 @@ public class Task_16t_int_array_sort {
                     }
                 }
                 break;
-            // Arrays sort
+            // Arrays sort ASC
             case 2:
+                System.out.println("Сортировка по возрастанию using Arrays sort.");
                 Arrays.sort(array);
+                break;
+            // bubble sort DESC
+            case 3:
+                System.out.println("DESC Сортировка по убыванию методом Bubble sort.");
+                for(int i=0; i < n; i ++)
+                {
+                    for(int j = 1; j < (n-i); j++)
+                    {
+                        if(array[j-1] < array[j])
+                        {
+                            int flip = array[j-1];
+                            array[j - 1] = array[j];
+                            array[j] = flip;
+                        }
+                    }
+                }
+                break;
+            // Arrays sort DESC
+            case 4:
+                System.out.println("DESC Сортировка по убыванию using Arrays.stream().");
+
+                int[] arrDesc = Arrays.stream(array).boxed()
+                        .sorted(Collections.reverseOrder())
+                        .mapToInt(Integer::intValue)
+                        .toArray();
+
+                array = arrDesc;
                 break;
             default:
                 System.out.println("Undefined operation.");
