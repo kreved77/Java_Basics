@@ -2,9 +2,13 @@
 
 ## Codewars.Com
 
+#### • [JadenCasingStrings](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/JadenCasingStrings.java)
+
+[[_Task link_](https://www.codewars.com/kata/5390bac347d09b7da40006f6)] Write a function that converts strings to -> Capitalizing Every Each Word.
+
 #### • [CreatePhoneNumber](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/CreatePhoneNumber.java)
 
-[[_Task link_](https://www.codewars.com/kata/525f50e3b73515a6db000b83)] Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
+[[_Task link_](https://www.codewars.com/kata/525f50e3b73515a6db000b83)] Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number (xxx) xxx-xxxx.
 
 #### • [ListFiltering](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/ListFiltering.java)
 
