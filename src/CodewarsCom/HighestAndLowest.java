@@ -19,6 +19,7 @@ public class HighestAndLowest {
 //        String quote = "1 9 3 4 -5";
         String quote = "8 3 -5 42 -1 0 0 -9 4 7 4 -4";
 //        String quote = "8 3 -5 42aaaaa -1 0 0 -9 4 7 4 -4";
+//        String quote = "8.0 3 -5 4.2aaaaa -1 0 0 -9 4 7 4 -4";
 //        String quote = "";
 //        String quote = null;
 
@@ -50,6 +51,10 @@ public class HighestAndLowest {
 
     public static String highAndLowWithFormatException(String numbers) {
         // Code here or
+
+        if (!numbers.matches("[\\-0-9 ]+")) throw new RuntimeException("NumberFormatException - not a valid input.");
+//        if (numbers == null || !numbers.matches("[\\-0-9 ]+")) return null;
+
         Integer max = Integer.MIN_VALUE;
         Integer min = Integer.MAX_VALUE;
         for (String e : numbers.split(" ")) {
