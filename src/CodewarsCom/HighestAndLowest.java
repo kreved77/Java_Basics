@@ -32,12 +32,15 @@ public class HighestAndLowest {
         Integer min = Integer.MAX_VALUE;
         for (String e : numbers.split(" ")) {
 //            System.out.println("e = " + e);
-            if ( Integer.parseInt(e) > max) {
-                max = Integer.valueOf(e);
-            }
-            if ( Integer.parseInt(e) < min){
-                min = Integer.valueOf(e);
-            }
+//            if ( Integer.parseInt(e) > max) {
+//                max = Integer.valueOf(e);
+//            }
+//            if ( Integer.parseInt(e) < min){
+//                min = Integer.valueOf(e);
+//            }
+            int value = Integer.parseInt(e);
+            max = value > max ? value : max;
+            min = value < min ? value : min;
         }
 //        return (max + " " + min);
         return String.format("%s %s", max, min);
