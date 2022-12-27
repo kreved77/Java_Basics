@@ -23,6 +23,10 @@
 ## Tasks
 
 
+#### [Task_18a_simple_calc](https://github.com/kreved77/Java_Basics/blob/main/src/Tasks/Task_18a_simple_calc.java)
+
+• "Calculator that calls each of function from a separate method. (1-4)"
+
 #### [Task_16t_int_array_sort](https://github.com/kreved77/Java_Basics/blob/main/src/Tasks/Task_16t_int_array_sort.java)
 
 • "Sort ASC/DESC an int[] array: (1)bubble sort, (2)using Arrays"
