@@ -2,6 +2,10 @@
 
 ## Codewars.Com
 
+#### • [Break_camelCase](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/Break_camelCase.java)
+
+[[_Task link_](https://www.codewars.com/kata/5208f99aee097e6552000148)] Write a function that will break up camel casing, using a space between words.
+
 #### • [JadenCasingStrings](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/JadenCasingStrings.java)
 
 [[_Task link_](https://www.codewars.com/kata/5390bac347d09b7da40006f6)] Write a function that converts strings to -> Capitalizing Every Each Word.
