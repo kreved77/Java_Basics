@@ -4,6 +4,11 @@ package CodewarsCom;
 https://www.codewars.com/kata/517abf86da9663f1d2000003
 */
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+
 public class ConvertString_toCamelCase {
     public static void main(String[] args) {
 //        String phrase = "The-Stealth-Warrior";
@@ -14,6 +19,9 @@ public class ConvertString_toCamelCase {
 //        String phrase = "river_Street_side_up_south_left_down";
 //        String phrase = "";
         System.out.println(toCamelCase(phrase));
+        System.out.println(toCamelCase2(phrase));
+        System.out.println(toCamelCase3(phrase));
+        System.out.println(toCamelCase4(phrase));
     }
 
     private static String toCamelCase(String s) {
@@ -24,5 +32,29 @@ public class ConvertString_toCamelCase {
             }
         }
         return result;
+    }
+
+    private static String toCamelCase2(String s) {
+        String result = "";
+        List<String> sList = Arrays.stream(s.split("([-_])"))
+                .toList();
+        result = sList.get(0) + sList.stream().skip(1)
+                .map(w -> Character.toUpperCase((char) w.charAt(0)) + w.substring(1))
+                .collect(Collectors.joining());
+        return result;
+    }
+
+    private static String toCamelCase3(String s) {
+        String[] arr = s.split("[-_]+");
+        return Arrays.stream(arr)
+                .skip(1)
+                .map(w -> w.substring(0,1).toUpperCase().concat(w.substring(1)))
+                .reduce(arr[0], String::concat);
+    }
+
+    private static String toCamelCase4(String s) {
+
+        return Pattern.compile("[-|_](.)").matcher(s)
+                .replaceAll(w -> w.group(1).toUpperCase());
     }
 }
