@@ -2,6 +2,10 @@
 
 ## Codewars.Com
 
+#### • [TribonacciSequence](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/TribonacciSequence.java)
+
+[[_Task link_](https://www.codewars.com/kata/556deca17c58da83c00002db)] A function that continues an array of 3 numbers (like  [1, 1, 1]) with the next number - generated as a sum the last 3 numbers of the sequence, and returns double[] of the first n elements. (if n == 0, then return an empty array.)
+
 #### • [TenMinWalk](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/TenMinWalk.java)
 
 [[_Task link_](https://www.codewars.com/kata/54da539698b8a2ad76000228)] Write a function that will return TRUE if the walk takes you 10min and returns you to starting point. (Input is a char[] array containing a random assortment of direction letters - 'n', 's', 'e', 'w'.)
