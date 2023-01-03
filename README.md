@@ -2,6 +2,10 @@
 
 ## Codewars.Com
 
+#### • [TenMinWalk](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/TenMinWalk.java)
+
+[[_Task link_](https://www.codewars.com/kata/54da539698b8a2ad76000228)] Write a function that will return TRUE if the walk takes you 10min and returns you to starting point. (Input is a char[] array containing a random assortment of direction letters - 'n', 's', 'e', 'w'.)
+
 #### • [ConvertString_toCamelCase](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/ConvertString_toCamelCase.java)
 
 [[_Task link_](https://www.codewars.com/kata/517abf86da9663f1d2000003)] Write a function that converts dash(-)/underscore(_) delimited words into camelCasing. (The first word stays as original. The next words should be always capitalized.)
