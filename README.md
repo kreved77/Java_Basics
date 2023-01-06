@@ -14,6 +14,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/517abf86da9663f1d2000003)] Write a function that converts dash(-)/underscore(_) delimited words into camelCasing. (The first word stays as original. The next words should be always capitalized.)
 
+#### • [SplitStrings](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SplitStrings.java)
+
+[[_Task link_](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001)] Write a function that splits the string into pairs of two characters. (For an odd number of characters - replace the missing second character of the final pair with '_').
+
 #### • [Break_camelCase](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/Break_camelCase.java)
 
 [[_Task link_](https://www.codewars.com/kata/5208f99aee097e6552000148)] Write a function that will break up camel casing, using a space between words.
