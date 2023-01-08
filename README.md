@@ -2,6 +2,10 @@
 
 ## Codewars.Com
 
+#### • [Scramblies](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/Scramblies.java)
+
+[[_Task link_](https://www.codewars.com/kata/55c04b4cc56a697bb0000048)] A function that checks if a portion of str1 characters can be rearranged to match str2. (('rkqodlw', 'world') ==> True)
+
 #### • [ValidBraces](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/ValidBraces.java)
 
 [[_Task link_](https://www.codewars.com/kata/5277c8a221e209d3f6000b56)] A function that takes a string of braces, and determines if the order of the braces is valid. ("(){}[]"  =>  True, "[(})" =>  False)
