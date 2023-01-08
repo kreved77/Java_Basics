@@ -5,6 +5,8 @@ import org.junit.Test;
 import java.util.*;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static org.junit.Assert.assertEquals;
 
@@ -65,5 +67,36 @@ public class Scramblies {
 //             System.out.println("===> " + result);
         return result;
     }
+
+
+// VER_2
+//    public static boolean scramble(String str1, String str2) {
+//        int[] letterFreq = new int[26];
+//
+//        for (int i = 0; i < str1.length(); i++) {
+//            letterFreq[str1.charAt(i) - 'a']++;
+//        }
+//
+//        for (int i = 0; i < str2.length(); i++) {
+//            if (--letterFreq[str2.charAt(i) - 'a'] < 0) {
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
+
+
+// VER_3
+//    public static boolean scramble(String str1, String str2) {
+//
+//        Map<String, Long> str1Map = Stream.of(str1.split("")).collect(Collectors.groupingBy(letter -> letter, Collectors.counting()));
+//        Map<String, Long> str2Map = Stream.of(str2.split("")).collect(Collectors.groupingBy(letter -> letter, Collectors.counting()));
+//
+//        for(Map.Entry<String, Long> entry : str2Map.entrySet()){
+//            System.out.println(entry + " (" + entry.getKey() + ", " + entry.getValue() + ")");
+//            if(str1Map.get(entry.getKey()) == null || str1Map.get(entry.getKey()) < entry.getValue()) return false;
+//        }
+//        return true;
+//    }
 
 }
