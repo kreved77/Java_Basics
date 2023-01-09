@@ -46,27 +46,27 @@ public class Scramblies {
 
 
 // VER_1
-    public static boolean scramble(String str1, String str2) {
-        boolean result = true;
-        Set<String> set = new HashSet<>();
-        for (int i = 0; i < str2.length(); i++){
-            String letter = str2.substring(i,i+1);
-            if (!set.contains(letter)){
-                set.add(letter);
-                Pattern p = Pattern.compile(letter);
-                Matcher m1 = p.matcher(str1);
-                Matcher m2 = p.matcher(str2);
-                int countHas = 0;
-                int countNeed = 0;
-                while (m1.find()) countHas++;
-                while (m2.find()) countNeed++;
-//             System.out.println(letter + ": need=" + countNeed + ", find=" + countHas);
-                if (countNeed > countHas) return false;
-            }
-        }
-//             System.out.println("===> " + result);
-        return result;
-    }
+//    public static boolean scramble(String str1, String str2) {
+//        boolean result = true;
+//        Set<String> set = new HashSet<>();
+//        for (int i = 0; i < str2.length(); i++){
+//            String letter = str2.substring(i,i+1);
+//            if (!set.contains(letter)){
+//                set.add(letter);
+//                Pattern p = Pattern.compile(letter);
+//                Matcher m1 = p.matcher(str1);
+//                Matcher m2 = p.matcher(str2);
+//                int countHas = 0;
+//                int countNeed = 0;
+//                while (m1.find()) countHas++;
+//                while (m2.find()) countNeed++;
+////             System.out.println(letter + ": need=" + countNeed + ", find=" + countHas);
+//                if (countNeed > countHas) return false;
+//            }
+//        }
+////             System.out.println("===> " + result);
+//        return result;
+//    }
 
 
 // VER_2
@@ -99,4 +99,26 @@ public class Scramblies {
 //        return true;
 //    }
 
+
+// VER_4
+/*    https://www.programiz.com/java-programming/library/hashmap/merge  */
+//
+//    public static boolean scramble(String str1, String str2) {
+//        Map<Character, Integer> hm1 = new HashMap<>();
+//        Map<Character, Integer> hm2 = new HashMap<>();
+//        for (char c : str1.toCharArray()) hm1.merge(c, 1, (oldValue, n) -> oldValue + n);
+//        for (char c : str2.toCharArray()) hm2.merge(c, 1, (oldValue, n) -> oldValue + n);
+//        for (char c : hm2.keySet()) if (hm2.get(c) > hm1.getOrDefault(c, 0)) return false;
+//        return true;
+//    }
+
+
+// VER_5
+    public static boolean scramble(String str1, String str2) {
+        Map<Character, Integer> hmap = new HashMap<>();
+        for (char c : str1.toCharArray()) hmap.merge(c, 1, Integer::sum);
+        for (char c : str2.toCharArray()) hmap.merge(c, -1, (oldValue, n) -> oldValue + n);
+        for (char c : hmap.keySet()) if (hmap.get(c) < 0) return false;
+        return true;
+    }
 }
