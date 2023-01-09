@@ -18,13 +18,17 @@
 
 [[_Task link_](https://www.codewars.com/kata/54da539698b8a2ad76000228)] Write a function that will return TRUE if the walk takes you 10min and returns you to starting point. (Input is a char[] array containing a random assortment of direction letters - 'n', 's', 'e', 'w'.)
 
-#### • [ConvertString_toCamelCase](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/ConvertString_toCamelCase.java)
+#### • [whoLikesIt](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/whoLikesIt.java)
 
-[[_Task link_](https://www.codewars.com/kata/517abf86da9663f1d2000003)] Write a function that converts dash(-)/underscore(_) delimited words into camelCasing. (The first word stays as original. The next words should be always capitalized.)
+[[_Task link_](https://www.codewars.com/kata/5266876b8f4bf2da9b000362)] The "like" system - a function that takes an array with the names of people and returns the text as shown. (Ex: ["Peter"]  -> "Peter likes this",  ["Alex", "Jacob", "Mark", "Max"]  -> "Alex, Jacob and 2 others like this")
 
 #### • [SplitStrings](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SplitStrings.java)
 
 [[_Task link_](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001)] Write a function that splits the string into pairs of two characters. (For an odd number of characters - replace the missing second character of the final pair with '_').
+
+#### • [ConvertString_toCamelCase](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/ConvertString_toCamelCase.java)
+
+[[_Task link_](https://www.codewars.com/kata/517abf86da9663f1d2000003)] Write a function that converts dash(-)/underscore(_) delimited words into camelCasing. (The first word stays as original. The next words should be always capitalized.)
 
 #### • [Break_camelCase](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/Break_camelCase.java)
 
