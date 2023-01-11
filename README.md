@@ -10,6 +10,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/5277c8a221e209d3f6000b56)] A function that takes a string of braces, and determines if the order of the braces is valid. ("(){}[]"  =>  True, "[(})" =>  False)
 
+#### • [sumIntervals](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SumOfIntervals.java)
+
+[[_Task link_](https://www.codewars.com/kata/52b7ed099cdc285c300001cd)] A function that accepts an array of intervals, and returns the sum of all the interval lengths. Overlapping intervals should only be counted once. (Ex: [ [1,4],[7, 10],[3, 5] ] => 7)
+
 #### • [TribonacciSequence](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/TribonacciSequence.java)
 
 [[_Task link_](https://www.codewars.com/kata/556deca17c58da83c00002db)] A function that continues an array of 3 numbers (like  [1, 1, 1]) with the next number - generated as a sum the last 3 numbers of the sequence, and returns double[] of the first n elements. (if n == 0, then return an empty array.)
