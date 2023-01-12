@@ -46,6 +46,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/525f50e3b73515a6db000b83)] Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number (xxx) xxx-xxxx.
 
+#### • [ArrayDiff](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/ArrayDiff.java)
+
+[[_Task link_](https://www.codewars.com/kata/523f5d21c841566fde000009)] Write a function, which subtracts one list from another and returns the result. It should remove all values from list a, which are present in list b keeping their order.
+
 #### • [HighestAndLowest](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/HighestAndLowest.java)
 
 [[_Task link_](https://www.codewars.com/kata/554b4ac871d6813a03000035)] Write a function that takes a string of space separated numbers, and returns the highest and lowest number (output: string with two numbers separated by a single space, highest number is first).
