@@ -54,6 +54,10 @@
 
 *** customVersion: returns Only Unique and Ordered values of Two Arrays.
 
+#### • [DescendingOrder](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/DescendingOrder.java)
+
+[[_Task link_](https://www.codewars.com/kata/5467e4d82edf8bbf40000155)] A function that takes any non-negative integer and return it with its digits in descending order (rearranges them from the highest first). (Input: 1315. Output: 5311)
+
 #### • [HighestAndLowest](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/HighestAndLowest.java)
 
 [[_Task link_](https://www.codewars.com/kata/554b4ac871d6813a03000035)] Write a function that takes a string of space separated numbers, and returns the highest and lowest number (output: string with two numbers separated by a single space, highest number is first).
