@@ -50,6 +50,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/523f5d21c841566fde000009)] Write a function, which subtracts one list from another and returns the result. It should remove all values from list a, which are present in list b keeping their order.
 
+#### • [ArrayDiff_custom_UniqueAndOrderedOfTwo](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/ArrayDiff_custom_UniqueAndOrderedOfTwo.java)
+
+*** customVersion: returns Only Unique and Ordered values of Two Arrays.
+
 #### • [HighestAndLowest](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/HighestAndLowest.java)
 
 [[_Task link_](https://www.codewars.com/kata/554b4ac871d6813a03000035)] Write a function that takes a string of space separated numbers, and returns the highest and lowest number (output: string with two numbers separated by a single space, highest number is first).
