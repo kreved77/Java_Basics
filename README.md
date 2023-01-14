@@ -26,6 +26,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/5266876b8f4bf2da9b000362)] The "like" system - a function that takes an array with the names of people and returns the text as shown. (Ex: ["Peter"]  -> "Peter likes this",  ["Alex", "Jacob", "Mark", "Max"]  -> "Alex, Jacob and 2 others like this")
 
+#### • [Isograms](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/Isograms.java)
+
+[[_Task link_](https://www.codewars.com/kata/54ba84be607a92aa900000f1)] Is an isogram? A function that checks: if an input string contains no repeating letters. (Ignore letter case. The empty string is an isogram.) (Ex: "arRay" --> false)
+
 #### • [SplitStrings](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SplitStrings.java)
 
 [[_Task link_](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001)] Write a function that splits the string into pairs of two characters. (For an odd number of characters - replace the missing second character of the final pair with '_').
