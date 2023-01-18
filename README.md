@@ -46,6 +46,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/5390bac347d09b7da40006f6)] Write a function that converts strings to -> Capitalizing Every Each Word.
 
+#### • [ConvertRGBToHex](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/ConvertRGBToHex.java)
+
+[[_Task link_](https://www.codewars.com/kata/513e08acc600c94f01000001)] Write a function that converts RGB decimal values -> in a hexadecimal representation, 6 characters long. (Ex: (0,0,0) -> 000000, (255,255,255) -> FFFFFF)
+
 #### • [CreatePhoneNumber](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/CreatePhoneNumber.java)
 
 [[_Task link_](https://www.codewars.com/kata/525f50e3b73515a6db000b83)] Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number (xxx) xxx-xxxx.
