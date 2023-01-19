@@ -10,6 +10,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/5277c8a221e209d3f6000b56)] A function that takes a string of braces, and determines if the order of the braces is valid. ("(){}[]"  =>  True, "[(})" =>  False)
 
+#### • [RangeExtraction](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/RangeExtraction.java)
+
+[[_Task link_](https://www.codewars.com/kata/51ba717bb08c1cd60f00002f)] A function that  formats an ordered list of integers: use separated by a comma(,) for individual integers, or by a dash(-) for a range of integers - from starting integer to the end integer in the range. (Ex: int[] {-6,-2,-1,0,1,3,4,5,7,8,9,14,15,17,18,19,20} => "-6,-2-1,3-5,7-9,14,15,17-20")
+
 #### • [sumIntervals](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SumOfIntervals.java)
 
 [[_Task link_](https://www.codewars.com/kata/52b7ed099cdc285c300001cd)] A function that accepts an array of intervals, and returns the sum of all the interval lengths. Overlapping intervals should only be counted once. (Ex: [ [1,4],[7, 10],[3, 5] ] => 7)
