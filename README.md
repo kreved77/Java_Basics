@@ -34,6 +34,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/54ba84be607a92aa900000f1)] Is an isogram? A function that checks: if an input string contains no repeating letters. (Ignore letter case. The empty string is an isogram.) (Ex: "arRay" --> false)
 
+#### • [DuplicateEncoder](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/DuplicateEncoder.java)
+
+[[_Task link_](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c)] A function that converts a string to a new string where: if a character appears only once -> it changes to "(" in the new string, or ")" if that character appears more than once. Ignore capitalization. (Ex: "recede" --> "()()()")
+
 #### • [SplitStrings](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SplitStrings.java)
 
 [[_Task link_](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001)] Write a function that splits the string into pairs of two characters. (For an odd number of characters - replace the missing second character of the final pair with '_').
