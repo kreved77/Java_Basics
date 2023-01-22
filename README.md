@@ -34,6 +34,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/5266876b8f4bf2da9b000362)] The "like" system - a function that takes an array with the names of people and returns the text as shown. (Ex: ["Peter"]  -> "Peter likes this",  ["Alex", "Jacob", "Mark", "Max"]  -> "Alex, Jacob and 2 others like this")
 
+#### • [DetectPangram](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/DetectPangram.java)
+
+[[_Task link_](https://www.codewars.com/kata/545cedaa9943f7fe7b000048)] Is a pangram? A function that checks: if an input string contains every letter of the alphabet [A-Z] at least once. Yes -> True, No -> False. (Ignore letter case, numbers and punctuation.)
+
 #### • [Isograms](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/Isograms.java)
 
 [[_Task link_](https://www.codewars.com/kata/54ba84be607a92aa900000f1)] Is an isogram? A function that checks: if an input string contains no repeating letters. (Ignore letter case. The empty string is an isogram.) (Ex: "arRay" --> false)
