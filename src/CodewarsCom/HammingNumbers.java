@@ -10,54 +10,70 @@ https://www.codewars.com/kata/526d84b98f428f14a60008da
 */
 
 public class HammingNumbers {
+    
+// VER_2
+    public static long hamming(int n) {
+        System.out.println("next n=" + n);
+        if (n <= 0) return -1;
+        TreeSet<Long> ts = new TreeSet<>(Arrays.asList(1L, 2L, 3L, 5L));
+        long firstLow = 1;
+        for (int i = 0; i < n; i++) {
+            firstLow = ts.pollFirst();
+            ts.add(firstLow * 2);
+            ts.add(firstLow * 3);
+            ts.add(firstLow * 5);
+        }
+//        System.out.println(" ts = " + ts + " | result=" + firstLow);
+        return firstLow;
+    }
 
 
 // VER_1_final
-    public static long hamming(int n) {
-        // TODO: Program me
-        System.out.println("new n=" + n);
-        long[] lA = new long[Math.max(2500,n)];
-        long a = (long) Math.pow(2, 0);
-        long b = (long) Math.pow(3, 0);
-        long c = (long) Math.pow(5, 0);
-
-        Set<Long> hs = new HashSet<>();
-        long num = 0;
-        int index = 0;
-        long limit = 10100100100L;
-        for (int i = 0; i < Math.min(n,34); i++){
-            a = (long) Math.pow(2, i);
-            num = a*b*c;
-            if (0 <= num && num < limit) {
-                if (!hs.contains(num)){
-                    hs.add(num);
-                    lA[index++] = num;
-                }
-            }
-            for (int j = 0; j < Math.min(n,21); j++){
-                b = (long) Math.pow(3, j);
-                num = a*b*c;
-                if (0 <= num && num < limit) {
-                    if (!hs.contains(num)){
-                        hs.add(num);
-                        lA[index++] = num;
-                    }
-                }
-                for (int k = 0; k < Math.min(n,15); k++){
-                    c = (long) Math.pow(5, k);
-                    num = a*b*c;
-                    if (0 <= num && num < limit) {
-                        if (!hs.contains(num)){
-                            hs.add(num);
-                            lA[index++] = num;
-                        }
-                    }
-                }
-            }
-        }
-        lA = Arrays.stream(lA).distinct().sorted().toArray();
-        return lA[n];
-    }
+//    public static long hamming(int n) {
+//        // TODO: Program me
+//        System.out.println("new n=" + n);
+//        long[] lA = new long[Math.max(2500,n)];
+//        long a = (long) Math.pow(2, 0);
+//        long b = (long) Math.pow(3, 0);
+//        long c = (long) Math.pow(5, 0);
+//
+//        Set<Long> hs = new HashSet<>();
+//        long num = 0;
+//        int index = 0;
+//        long limit = 10100100100L;
+//        for (int i = 0; i < Math.min(n,34); i++){
+//            a = (long) Math.pow(2, i);
+//            num = a*b*c;
+//            if (0 <= num && num < limit) {
+//                if (!hs.contains(num)){
+//                    hs.add(num);
+//                    lA[index++] = num;
+//                }
+//            }
+//            for (int j = 0; j < Math.min(n,21); j++){
+//                b = (long) Math.pow(3, j);
+//                num = a*b*c;
+//                if (0 <= num && num < limit) {
+//                    if (!hs.contains(num)){
+//                        hs.add(num);
+//                        lA[index++] = num;
+//                    }
+//                }
+//                for (int k = 0; k < Math.min(n,15); k++){
+//                    c = (long) Math.pow(5, k);
+//                    num = a*b*c;
+//                    if (0 <= num && num < limit) {
+//                        if (!hs.contains(num)){
+//                            hs.add(num);
+//                            lA[index++] = num;
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//        lA = Arrays.stream(lA).distinct().sorted().toArray();
+//        return lA[n];
+//    }
 
 // VER_1
 //    public static long hamming(int n) {
