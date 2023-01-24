@@ -66,6 +66,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/5390bac347d09b7da40006f6)] Write a function that converts strings to -> Capitalizing Every Each Word.
 
+#### • [TextAlignJustify](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/TextAlignJustify.java)
+
+[[_Task link_](https://www.codewars.com/kata/537e18b6147aa838f600001b)] Write a function that takes a single-lined text and emulates text justification to the expected width. Each line should contain as many words as possible. Use spaces to fill in the gaps between words. Use '\n' to separate lines. Last line: should not be justified, single space between words. (Ex: "Lorem  ipsum  dolor  sit amet,")
+
 #### • [ConvertRGBToHex](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/ConvertRGBToHex.java)
 
 [[_Task link_](https://www.codewars.com/kata/513e08acc600c94f01000001)] Write a function that converts RGB decimal values -> in a hexadecimal representation, 6 characters long. (Ex: (0,0,0) -> 000000, (255,255,255) -> FFFFFF)
