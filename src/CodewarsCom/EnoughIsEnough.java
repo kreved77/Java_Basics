@@ -13,37 +13,46 @@ https://www.codewars.com/kata/554ca54ffa7d91b236000023
 
 public class EnoughIsEnough {
 
+// VER_2        // https://www.baeldung.com/java-stream-sum
+    public static int[] deleteNth(int[] elements, int maxOccurrences) {
+        System.out.println(Arrays.toString(elements) + " / max=" + maxOccurrences);
+        Map<Integer, Integer> hm1 = new HashMap<>();
+        return IntStream.of(elements)
+                .filter(e -> hm1.merge(e, 1, Integer::sum) <= maxOccurrences)
+                .toArray();
+    }
+
 
 // VER_1
-    public static int[] deleteNth(int[] elements, int maxOccurrences) {
-        System.out.println(Arrays.toString(elements) + " / " + maxOccurrences);
-
-        Map<Integer, Integer> hm = new HashMap<>();
-        for (int e : elements){
-            hm.merge(e, 1, (oldValue, n) -> oldValue + n);
-        }
-
-        int[] result = new int[elements.length];
-        int maxIndex = 0;
-        for (int e : elements){
-//            System.out.println("hm.get(e) = " + hm.get(e));
-            if (Math.min(hm.get(e), maxOccurrences) > 0) {
-                hm.merge(e, -1, (oldValue, n) -> Math.min(oldValue, maxOccurrences) + n);
-                result[maxIndex++] = e;
-            }
-        }
-
-        System.out.println(Arrays.toString(result));
-        System.out.println(Arrays.toString(Arrays.stream(result).limit(maxIndex).toArray()));
-        return Arrays.stream(result).limit(maxIndex).toArray();
-    }
+//    public static int[] deleteNth(int[] elements, int maxOccurrences) {
+//        System.out.println(Arrays.toString(elements) + " / " + maxOccurrences);
+//
+//        Map<Integer, Integer> hm = new HashMap<>();
+//        for (int e : elements){
+//            hm.merge(e, 1, (oldValue, n) -> oldValue + n);
+//        }
+//
+//        int[] result = new int[elements.length];
+//        int maxIndex = 0;
+//        for (int e : elements){
+////            System.out.println("hm.get(e) = " + hm.get(e));
+//            if (Math.min(hm.get(e), maxOccurrences) > 0) {
+//                hm.merge(e, -1, (oldValue, n) -> Math.min(oldValue, maxOccurrences) + n);
+//                result[maxIndex++] = e;
+//            }
+//        }
+//
+//        System.out.println(Arrays.toString(result));
+//        System.out.println(Arrays.toString(Arrays.stream(result).limit(maxIndex).toArray()));
+//        return Arrays.stream(result).limit(maxIndex).toArray();
+//    }
 
 
 
 // Test DATA
     @Test
     public void deleteNth() throws Exception {
-        doTest(new int[] { 20, 37,5, 21 }, new int[] { 20, 37, 20, 21 }, 1 );
+        doTest(new int[] { 20, 37, 21 }, new int[] { 20, 37, 20, 21 }, 1 );
         doTest(new int[] { 1, 1, 3, 3, 7, 2, 2, 2 }, new int[] { 1, 1, 3, 3, 7, 2, 2, 2, 2 }, 3 );
         doTest(new int[] { 1, 2, 3, 1, 1, 2, 2, 3, 3, 4, 5 }, new int[] { 1, 2, 3, 1, 1, 2, 1, 2, 3, 3, 2, 4, 5, 3, 1 }, 3 );
         doTest(new int[] { 1, 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1, 1 }, 5 );
