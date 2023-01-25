@@ -98,6 +98,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/54ff3102c1bad923760001f3)] Write a function that returns the number (count) of vowels in the given string. (a, e, i, o, u  - are vowels for this Kata, but not y).
 
+#### • [HighestScoringWord](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/HighestScoringWord.java)
+
+[[_Task link_](https://www.codewars.com/kata/57eb8fcdf670e99d9b000272)] Write a function that takes a string of words, and returns a single word with the highest score of its letters: a = 1, b = 2, c = 3, ... (Ex: "abad" score is 8 (1 + 2 + 1 + 4))
+
 #### • [HighestAndLowest](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/HighestAndLowest.java)
 
 [[_Task link_](https://www.codewars.com/kata/554b4ac871d6813a03000035)] Write a function that takes a string of space separated numbers, and returns the highest and lowest number (output: string with two numbers separated by a single space, highest number is first).
