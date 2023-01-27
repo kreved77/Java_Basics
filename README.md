@@ -94,6 +94,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/5656b6906de340bd1b0000ac)] Take 2 strings and return a new sorted string, containing distinct letters - each taken only once. (Ex: "xyaabbbc","xxyyzaab" -> "abcxyz")
 
+#### • [CountingDuplicates](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/CountingDuplicates.java)
+
+[[_Task link_](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1)] Write a function that returns the number (count) of characters that occur more than once in the input string. (Ignore letter case.) (Ex: "aabBcde" -> 2)
+
 #### • [VowelCount](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/VowelCount.java)
 
 [[_Task link_](https://www.codewars.com/kata/54ff3102c1bad923760001f3)] Write a function that returns the number (count) of vowels in the given string. (a, e, i, o, u  - are vowels for this Kata, but not y).
