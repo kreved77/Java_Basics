@@ -13,29 +13,46 @@ https://www.codewars.com/kata/550f22f4d758534c1100025a
 public class DirectionsReduction {
 
 
-// VER_2
+// VER_3
+
     public static String[] dirReduc(String[] arr) {
+        Set<String> ss = new HashSet<>(Arrays.asList("NORTHSOUTH","SOUTHNORTH","EASTWEST","WESTEAST"));
 
-        List<String> slist = new ArrayList(Arrays.asList(arr));
-        int flagChanges;
-
-        do {
-            flagChanges = 0;
-            for (int i = 0; i < slist.size()-1; i++){
-                if (       ((slist.get(i) == "NORTH") && (slist.get(i+1) == "SOUTH"))
-                        || ((slist.get(i) == "SOUTH") && (slist.get(i+1) == "NORTH"))
-                        || ((slist.get(i) == "EAST") && (slist.get(i+1) == "WEST"))
-                        || ((slist.get(i) == "WEST") && (slist.get(i+1) == "EAST"))
-                ) {
-                    slist.remove(i);
-                    slist.remove(i--);
-                    flagChanges++;
-                }
+        List<String> result = new ArrayList();
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (!result.isEmpty() && ss.contains(arr[i] + result.get(0))) {
+                result.remove(0);
+            } else {
+                result.add(0, arr[i]);
             }
-        } while (flagChanges > 0);
-
-        return slist.toArray(new String[0]);
+        }
+        return result.toArray(new String[0]);
     }
+
+
+// VER_2
+//    public static String[] dirReduc(String[] arr) {
+//
+//        List<String> slist = new ArrayList(Arrays.asList(arr));
+//        int flagChanges;
+//
+//        do {
+//            flagChanges = 0;
+//            for (int i = 0; i < slist.size()-1; i++){
+//                if (       ((slist.get(i) == "NORTH") && (slist.get(i+1) == "SOUTH"))
+//                        || ((slist.get(i) == "SOUTH") && (slist.get(i+1) == "NORTH"))
+//                        || ((slist.get(i) == "EAST") && (slist.get(i+1) == "WEST"))
+//                        || ((slist.get(i) == "WEST") && (slist.get(i+1) == "EAST"))
+//                ) {
+//                    slist.remove(i);
+//                    slist.remove(i--);
+//                    flagChanges++;
+//                }
+//            }
+//        } while (flagChanges > 0);
+//
+//        return slist.toArray(new String[0]);
+//    }
 
 
 // VER_2_initial
