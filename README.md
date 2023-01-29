@@ -94,6 +94,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/5467e4d82edf8bbf40000155)] A function that takes any non-negative integer and return it with its digits in descending order (rearranges them from the highest first). (Input: 1315. Output: 5311)
 
+#### • [SumStringsAsNumbers](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SumStringsAsNumbers.java)
+
+[[_Task link_](https://www.codewars.com/kata/5324945e2ece5e1f32000370)] Take 2 strings of integers [0-9] and return a new string of the sum of those integers. (Numbers are huge! Don't use BigInteger and BigDecimal.) (Ex: '12','0123' => '135')
+
 #### • [TwoToOne](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/TwoToOne.java)
 
 [[_Task link_](https://www.codewars.com/kata/5656b6906de340bd1b0000ac)] Take 2 strings and return a new sorted string, containing distinct letters - each taken only once. (Ex: "xyaabbbc","xxyyzaab" -> "abcxyz")
