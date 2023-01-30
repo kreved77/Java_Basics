@@ -102,6 +102,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/5656b6906de340bd1b0000ac)] Take 2 strings and return a new sorted string, containing distinct letters - each taken only once. (Ex: "xyaabbbc","xxyyzaab" -> "abcxyz")
 
+#### • [YourOrderPlease](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/YourOrderPlease.java)
+
+[[_Task link_](https://www.codewars.com/kata/55c45be3b2079eccff00010f)] Each word in the input string contains a single number - the position of the word in the result string. Write a function that will order given words to the correct string. (Ex: "is2 Thi1s T4est 3a" -> "Thi1s is2 3a T4est")
+
 #### • [CountingDuplicates](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/CountingDuplicates.java)
 
 [[_Task link_](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1)] Write a function that returns the number (count) of characters that occur more than once in the input string. (Ignore letter case.) (Ex: "aabBcde" -> 2)
