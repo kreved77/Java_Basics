@@ -2,6 +2,10 @@
 
 ## Codewars.Com
 
+#### • [CodewarsStyleRankingSystem](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/CodewarsStyleRankingSystem.java)
+
+[[_Task link_](https://www.codewars.com/kata/51fda2d95d6efda45e00004e)] Write a class User: it is used to calculate the Rank/Progress that a user will progress through a ranking system similar to the one Codewars uses.
+
 #### • [Scramblies](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/Scramblies.java)
 
 [[_Task link_](https://www.codewars.com/kata/55c04b4cc56a697bb0000048)] A function that checks if a portion of str1 characters can be rearranged to match str2. (('rkqodlw', 'world') ==> True)
