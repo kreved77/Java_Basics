@@ -34,6 +34,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/526d84b98f428f14a60008da)] Write a function that computes the N-th smallest Hamming number - a positive integer of the form (2^i)*(3^j)*(5^k), for i, j, k = [0; +). (Ex: (2^0)(3^0)(5^0) => 1, (2^1)(3^0)(5^0) => 2, (2^0)(3^1)(5^0) => 3, ...)
 
+#### • [SumDigPower](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SumDigPower.java)
+
+[[_Task link_](https://www.codewars.com/kata/5626b561280a42ecc50000d1)] You receive two integers that defines the range [a, b]. Find such numbers in range that sum of (digit ^ it position) gives the same number. (Ex: 89 = (8^1)+(9^2), 135 = (1^1)(3^2)(5^3), ...)
+
 #### • [TribonacciSequence](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/TribonacciSequence.java)
 
 [[_Task link_](https://www.codewars.com/kata/556deca17c58da83c00002db)] A function that continues an array of 3 numbers (like  [1, 1, 1]) with the next number - generated as a sum the last 3 numbers of the sequence, and returns double[] of the first n elements. (if n == 0, then return an empty array.)
