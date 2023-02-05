@@ -114,6 +114,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/5656b6906de340bd1b0000ac)] Take 2 strings and return a new sorted string, containing distinct letters - each taken only once. (Ex: "xyaabbbc","xxyyzaab" -> "abcxyz")
 
+#### • [LongestConsecutiveStrings](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/LongestConsecutiveStrings.java)
+
+[[_Task link_](https://www.codewars.com/kata/56a5d994ac971f1ac500003e)] Write a function that takes an array of strings[] and an integer k, and returns the longest string consisting of k consecutive strings. (consecutive : follow one after another without an interruption)
+
 #### • [YourOrderPlease](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/YourOrderPlease.java)
 
 [[_Task link_](https://www.codewars.com/kata/55c45be3b2079eccff00010f)] Each word in the input string contains a single number - the position of the word in the result string. Write a function that will order given words to the correct string. (Ex: "is2 Thi1s T4est 3a" -> "Thi1s is2 3a T4est")
