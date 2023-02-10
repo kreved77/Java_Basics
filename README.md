@@ -38,6 +38,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/526d84b98f428f14a60008da)] Write a function that computes the N-th smallest Hamming number - a positive integer of the form (2^i)*(3^j)*(5^k), for i, j, k = [0; +). (Ex: (2^0)(3^0)(5^0) => 1, (2^1)(3^0)(5^0) => 2, (2^0)(3^1)(5^0) => 3, ...)
 
+#### • [NarcissisticNumber](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/NarcissisticNumber.java)
+
+[[_Task link_](https://www.codewars.com/kata/5287e858c6b5a9678200083c)] Narcissistic Number - a positive number which is the sum of its digits, each raised to the power of the number of digits. Your code must check imput and return true or false. (Ex: 153 = (1^3)(5^3)(3^3) = 1 + 125 + 27 = 153 => true)
+
 #### • [SumDigPower](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SumDigPower.java)
 
 [[_Task link_](https://www.codewars.com/kata/5626b561280a42ecc50000d1)] You receive two integers that defines the range [a, b]. Find such numbers in range that sum of (digit ^ it position) gives the same number. (Ex: 89 = (8^1)+(9^2), 135 = (1^1)(3^2)(5^3), ...)
