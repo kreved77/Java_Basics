@@ -134,6 +134,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/55c45be3b2079eccff00010f)] Each word in the input string contains a single number - the position of the word in the result string. Write a function that will order given words to the correct string. (Ex: "is2 Thi1s T4est 3a" -> "Thi1s is2 3a T4est")
 
+#### • [SpinWords](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SpinWords.java)
+
+[[_Task link_](https://www.codewars.com/kata/5264d2b162488dc400000001)] Write a function that takes a string of words -> and returns it, but with reversed every 5+ letter word. (Ex: "Hey fellow" => "Hey wollef")
+
 #### • [CountingDuplicates](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/CountingDuplicates.java)
 
 [[_Task link_](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1)] Write a function that returns the number (count) of characters that occur more than once in the input string. (Ignore letter case.) (Ex: "aabBcde" -> 2)
