@@ -106,6 +106,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/525f50e3b73515a6db000b83)] Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number (xxx) xxx-xxxx.
 
+#### • [CheckValidPhoneNumber](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/CheckValidPhoneNumber.java)
+
+[[_Task link_](https://www.codewars.com/kata/525f47c79f2f25a4db000025)] Write a function that checks a string -> returns true if it's a valid form of a phone number. (Ex: "(123) 456-7890"  => true)
+
 #### • [ArrayDiff](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/ArrayDiff.java)
 
 [[_Task link_](https://www.codewars.com/kata/523f5d21c841566fde000009)] Write a function, which subtracts one list from another and returns the result. It should remove all values from list a, which are present in list b keeping their order.
