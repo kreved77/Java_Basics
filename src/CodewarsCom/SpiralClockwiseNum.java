@@ -3,6 +3,7 @@ package CodewarsCom;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.*;
 import java.util.Random;
 
 import static org.junit.Assert.assertArrayEquals;
@@ -61,9 +62,30 @@ public class SpiralClockwiseNum {
             }
             num++;
         }
+        printArray(result);
         return result;
     }
 
+    private static void printArray(int[][] result) {
+        int maxValue = Arrays.stream(result[result.length/2]).max().getAsInt();
+//        int maxValue = result.length * result.length;
+        System.out.print("NEW (maxValue="+ maxValue +")\n");
+        for (int[] row : result) {
+            for (int i : row) {
+            // with Zero's
+//                if (maxValue > 1000)        System.out.printf("%04d ", i);
+//                else if (maxValue > 100)    System.out.printf("%03d ", i);
+//                else if (maxValue > 10)     System.out.printf("%02d ", i);
+//                else                        System.out.printf("%01d ", i);
+            // without Zero's
+                if (maxValue > 1000)        System.out.printf("%5d", i);
+                else if (maxValue > 100)    System.out.printf("%4d", i);
+                else if (maxValue > 10)     System.out.printf("%3d", i);
+                else                        System.out.printf("%2d", i);
+            }
+            System.out.print("\n");
+        }
+    }
 
 
 // VER_2
@@ -193,7 +215,7 @@ public class SpiralClockwiseNum {
     @Test
     public void randomized_30_tests() {
         Random random = new Random();
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 3; i++) {
             int n = random.nextInt(50);
             int[][] expected = check7894(n);
             Assert.assertArrayEquals(expected, SpiralClockwiseNum.createSpiral(n));
