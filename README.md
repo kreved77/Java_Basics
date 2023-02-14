@@ -62,6 +62,13 @@
 
 [[_Task link_](https://www.codewars.com/kata/54da539698b8a2ad76000228)] Write a function that will return TRUE if the walk takes you 10min and returns you to starting point. (Input is a char[] array containing a random assortment of direction letters - 'n', 's', 'e', 'w'.)
 
+#### • [SpiralClockwiseNum](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SpiralClockwiseNum.java)
+
+[[_Task link_](https://www.codewars.com/kata/536a155256eb459b8700077e)] Write a function that receives an integer N -> returns an NxN array int[N][N] with numbers 1 to NxN represented as a clockwise spiral. (Ex: N = 3  -> [[1,2,3],[8,9,4],[7,6,5]] :
+1    2    3    
+8    9    4    
+7    6    5  )
+
 #### • [whoLikesIt](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/whoLikesIt.java)
 
 [[_Task link_](https://www.codewars.com/kata/5266876b8f4bf2da9b000362)] The "like" system - a function that takes an array with the names of people and returns the text as shown. (Ex: ["Peter"]  -> "Peter likes this",  ["Alex", "Jacob", "Mark", "Max"]  -> "Alex, Jacob and 2 others like this")
