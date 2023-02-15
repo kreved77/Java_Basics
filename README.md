@@ -62,6 +62,15 @@
 
 [[_Task link_](https://www.codewars.com/kata/54da539698b8a2ad76000228)] Write a function that will return TRUE if the walk takes you 10min and returns you to starting point. (Input is a char[] array containing a random assortment of direction letters - 'n', 's', 'e', 'w'.)
 
+#### • [SpiralClockwisePath](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SpiralClockwisePath.java)
+
+[[_Task link_](https://www.codewars.com/kata/534e01fbbb17187c7e0000c6)] Get an integer N to create an array int[N][N] -> NxN clockwise spiral of numbers '1' separated with numbers '0'. So, the snake made with '1' cannot touch to itself. (Ex: N = 5  -> [[1,1,1,1,1],[0,0,0,0,1],[1,1,1,0,1],[1,0,0,0,1],[1,1,1,1,1]] :
+1 1 1 1 1
+0 0 0 0 1
+1 1 1 0 1
+1 0 0 0 1
+1 1 1 1 1   )
+
 #### • [SpiralClockwiseNum](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SpiralClockwiseNum.java)
 
 [[_Task link_](https://www.codewars.com/kata/536a155256eb459b8700077e)] Write a function that receives an integer N -> returns an NxN array int[N][N] with numbers 1 to NxN represented as a clockwise spiral. (Ex: N = 3  -> [[1,2,3],[8,9,4],[7,6,5]] :
