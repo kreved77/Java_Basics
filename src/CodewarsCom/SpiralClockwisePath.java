@@ -26,22 +26,22 @@ public class SpiralClockwisePath {
     public static int[][] spiralize(int n) {
         int[][] result = new int[n][n];
         for (int[] row : result)
-            Arrays.fill(row, 1);
+            Arrays.fill(row, 0);
 
         int[][] steps = new int[][]{{0,1}, {1,0}, {0,-1}, {-1,0}};
-        int top = 1;            // index height up   (min)
-        int right = n - 1;      // index  width right (max)
-        int bottom = n - 1;     // index height down (max)
-        int left = 1;           // index  width left  (min)
+        int top = 0;            // index height up   (min)
+        int right = n;      // index  width right (max)
+        int bottom = n;     // index height down (max)
+        int left = 0;           // index  width left  (min)
         int turn = 0;           // move direction →, ↓, ←, ↑
 
-        int h = 1;                        // start index height int[h][ ]
+        int h = 0;                        // start index height int[h][ ]
         int w = 0;                        // start index  width int[ ][w]
         final int offset = 2;             // offset to next path
 
-        while (top <= bottom && left <= right) {
+        while (top <= bottom && left < right) {
             do {
-                result[h][w] = 0;
+                result[h][w] = 1;
                 h += steps[turn][0];
                 w += steps[turn][1];
             } while (h >= top   && h < bottom
@@ -52,7 +52,7 @@ public class SpiralClockwisePath {
                 w--;
                 h++;
             } else if (turn == 1) {
-                right = right -offset;
+                right = right - offset;
                 w--;
                 h--;
             } else if (turn == 2) {
@@ -67,15 +67,8 @@ public class SpiralClockwisePath {
             turn = ++turn % 4;
         }
 
-        System.out.print("FINAL RESULT for n=" + n + ":\n");
-        for (int[] row : result) {
-            for (int i : row) {
-//                System.out.print(i + " ");
-                if (i == 0) System.out.print("▫");
-                if (i == 1) System.out.print("█");
-            }
-            System.out.print("\n");
-        }
+        if (n > 0)
+            printArray(result);
 
         return result;
     }
@@ -125,15 +118,18 @@ public class SpiralClockwisePath {
 //        printArray(result);
 //        return result;
 //    }
-//
-//    private static void printArray(int[][] result) {
-//        for (int[] row : result) {
-//            for (int i : row) {
-//                System.out.printf("%2d", i);
-//            }
-//            System.out.print("\n");
-//        }
-//    }
+
+    private static void printArray(int[][] result) {
+        System.out.print("FINAL RESULT for n=" + result[0].length + ":\n");
+        for (int[] row : result) {
+            for (int i : row) {
+//                System.out.print(i + " ");
+                if (i == 0) System.out.print("▫");
+                if (i == 1) System.out.print("█");
+            }
+            System.out.print("\n");
+        }
+    }
 
 
 
@@ -174,11 +170,17 @@ public class SpiralClockwisePath {
     private final static class $Spiralizor {
 
         private static int[][] spiralize(int n) {
-            int[][] ary = IntStream.range(0, n).mapToObj(i -> IntStream.range(0, n).map(j -> {
-                int min = Math.min(Math.min(i, j), Math.min(n - i - 1, n - j - 1));
-                return j == min && i == min + 1 ? min % 2 : 1 - min % 2;
-            }).toArray()).toArray(int[][]::new);
-            if (n % 2 == 0) ary[n / 2][n / 2 - 1] = 0;
+            int[][] ary = IntStream.range(0, n)
+                    .mapToObj(i -> IntStream.range(0, n)
+                            .map(j -> {
+                                int min = Math.min(Math.min(i, j), Math.min(n - i - 1, n - j - 1));
+                                return j == min && i == min + 1 ? min % 2 : 1 - min % 2;
+                            })
+                            .toArray())
+                    .toArray(int[][]::new);
+            if (n % 2 == 0) {
+                ary[n / 2][n / 2 - 1] = 0;
+            }
             return ary;
         }
 
