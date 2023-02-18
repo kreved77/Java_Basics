@@ -154,6 +154,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/55c45be3b2079eccff00010f)] Each word in the input string contains a single number - the position of the word in the result string. Write a function that will order given words to the correct string. (Ex: "is2 Thi1s T4est 3a" -> "Thi1s is2 3a T4est")
 
+#### • [SimplePigLatin](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SimplePigLatin.java)
+
+[[_Task link_](https://www.codewars.com/kata/520b9d2ad5c005041100000f)] A function takes a string -> returns it, but in every word moves the 1st letter to the end, and then add "ay" to the end of the word. (Ex: "Pig latin is cool" => "igPay atinlay siay oolcay")
+
 #### • [SpinWords](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/SpinWords.java)
 
 [[_Task link_](https://www.codewars.com/kata/5264d2b162488dc400000001)] Write a function that takes a string of words -> and returns it, but with reversed every 5+ letter word. (Ex: "Hey fellow" => "Hey wollef")
