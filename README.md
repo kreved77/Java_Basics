@@ -146,6 +146,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/5656b6906de340bd1b0000ac)] Take 2 strings and return a new sorted string, containing distinct letters - each taken only once. (Ex: "xyaabbbc","xxyyzaab" -> "abcxyz")
 
+#### • [WhichAreIn](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/WhichAreIn.java)
+
+[[_Task link_](https://www.codewars.com/kata/550554fd08b86f84fe000a58)] Write a function that takes 2 arrays of strings[] -> returns a sorted array (a-z order) of such strings in a1 that are substrings of a2. It must be without duplicates.
+
 #### • [LongestConsecutiveStrings](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/LongestConsecutiveStrings.java)
 
 [[_Task link_](https://www.codewars.com/kata/56a5d994ac971f1ac500003e)] Write a function that takes an array of strings[] and an integer k, and returns the longest string consisting of k consecutive strings. (consecutive : follow one after another without an interruption)
