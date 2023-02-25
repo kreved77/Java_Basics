@@ -12,6 +12,10 @@
 
 [[_Task link_](https://www.codewars.com/kata/551f23362ff852e2ab000037)] A function that finds the maximum sum of consecutive numbers from the top to the bottom of the pyramid. (A path down from a current element - are only the two elements under it.)
 
+#### • [MatrixDeterminant](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/MatrixDeterminant.java)
+
+[[_Task link_](https://www.codewars.com/kata/52a382ee44408cea2500074c)] Write a function that accepts int[][] - a square matrix (N x N 2D array) and returns the determinant of the matrix.
+
 #### • [Scramblies](https://github.com/kreved77/Java_Basics/blob/main/src/CodewarsCom/Scramblies.java)
 
 [[_Task link_](https://www.codewars.com/kata/55c04b4cc56a697bb0000048)] A function that checks if a portion of str1 characters can be rearranged to match str2. (('rkqodlw', 'world') ==> True)
